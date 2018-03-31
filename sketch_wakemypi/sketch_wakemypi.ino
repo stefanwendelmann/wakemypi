@@ -1,23 +1,21 @@
 void setup() {
   Serial.begin(9600);
-  // put your setup code here, to run once:
   pinMode(2, OUTPUT);
   Serial.println("ON");
 }
 
-int x;
 String s;
 
 void loop() {
-if(Serial.available()>0){
-  s = Serial.readString();
-  if(s.substring(0,5) == "TIME="){
-    setTime();
-  }else if(s.substring(0,7) == "WAKEIN="){
-    wakeIn();
+  if(Serial.available()>0){
+    s = Serial.readString();
+    if(s.substring(0,5) == "TIME="){
+      setTime();
+    }else if(s.substring(0,7) == "WAKEIN="){
+      wakeIn();
+    }
+    //Serial.println(s);
   }
-  Serial.println(s);
-}
 }
 
 void setTime(){
