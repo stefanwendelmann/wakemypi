@@ -21,26 +21,27 @@ Also i want a Optocuppler (4N35) for switching the RUN Pin of the Raspberry Pi.
 
 ### Arduino Nano
 
-Pin nr. | desc. | dest
-1 | D3 | Singal LED
-
-31|Tx|LLC HV3
-30|Rx|LLC HV4
-GND|GND|LLC HV GND
-GND|GND|Signal LED
-GND|GND|4N35 Pin 2 (Cathode)
-32|D2|100Ohm - 4N35 Pin 1 (Anode)
-5V|5V|LLC HV Vin
+| Pin nr.       | Description   | Destination  |
+| ------------- | ------------- | ----- |
+| 1      | D3 | Signal LED |
+| 31 | Tx | LLC HV3 |
+| 30 | Rx | LLC HV4 |
+| GND | GND | LLC HV GND |
+| GND | GND | Signal LED |
+| GND | GND | 4N35 Pin 2 (Cathode) |
+| 32 | D2 | 100Ohm - 4N35 Pin 1 (Anode) |
+| 5V | 5V | LLC HV Vin |
 
 ### RPi
 
-Pin nr.|desc|dest
-1|3.3 VDC|LLC LV Vin
-6|GND|LLC LV GND
-8|Tx|LLC LV 4
-10|Rx|LLC LV 3
-RUN 3.3V|RUN 3.3 V|4N35 Pin 5 (Colector)
-RUN GND|RUN GND|4N35 Pin 4 (Emitter)
+| Pin nr.       | Description   | Destination  |
+| ------------- | ------------- | ----- |
+| 1 | 3.3 VDC | LLC LV Vin |
+| 6 | GND | LLC LV GND |
+| 8 | Tx | LLC LV 4 |
+| 10 | Rx | LLC LV 3 |
+| RUN 3.3V | RUN 3.3 V | 4N35 Pin 5 (Colector) |
+| RUN GND | RUN GND | 4N35 Pin 4 (Emitter) |
 
 
 
