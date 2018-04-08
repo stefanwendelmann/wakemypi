@@ -1,6 +1,9 @@
 void setup() {
   Serial.begin(9600);
-  pinMode(2, OUTPUT);
+  pinMode(2, OUTPUT); // 4N35 RPi Reset 
+  pinMode(3, OUTPUT); // Singal LED
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
   Serial.println("ON");
 }
 
