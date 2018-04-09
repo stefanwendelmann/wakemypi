@@ -14,6 +14,14 @@ void setup() {
 void wakeIn(){
   Serial.println("WAKE YOU IN = "+s.substring(7)+" ms");
   Serial.println("OK");
+  //delay()
+  Serial.println("HEYWAKEUP!");
+  digitalWrite(2, HIGH);
+  digitalWrite(3, HIGH);
+  delay(2000);
+  digitalWrite(2, LOW);
+  digitalWrite(3, LOW);
+  Serial.println("WAKEUPDONE");
 }
 
 void loop() {
